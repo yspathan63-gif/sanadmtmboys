@@ -7,8 +7,8 @@ body { font-family: Arial, sans-serif; background: #e0e0e0; margin: 0; padding-b
 .controls { text-align: center; margin: 20px auto; padding: 20px; background: white; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
 .controls input, .controls select, .controls button { padding: 10px; margin: 5px; font-size: 16px; cursor: pointer; border: none; border-radius: 5px; }
 
-.urdu-font { font-family: 'Jameel Noori', serif; direction: rtl; font-size: 28px; font-weight: bold; }
-.eng-font { font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; text-transform: uppercase;}
+.urdu-font { font-family: 'Jameel Noori', serif; direction: rtl; font-size: 26px; font-weight: bold; }
+.eng-font { font-family: Arial, sans-serif; font-size: 18px; font-weight: bold; text-transform: uppercase;}
 
 .cert-wrapper { width: 100%; overflow-x: auto; text-align: center; }
 
@@ -25,25 +25,27 @@ body { font-family: Arial, sans-serif; background: #e0e0e0; margin: 0; padding-b
 .text-layer { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent; }
 .field { position: absolute; color: #000; white-space: nowrap; }
 
-/* Top section */
-#grNo { top: 22%; left: 24%; font-size: 20px; font-weight: bold; }
-#serialNo { top: 22%; right: 24%; font-size: 20px; font-weight: bold; }
+/* --- PERFECTION ALIGNMENT BASED ON IMAGE --- */
 
-/* LEFT SIDE (ENGLISH) */
-#madrasaEng { top: 45%; left: 10%; width: 35%; text-align: center; }
-#studentEng { top: 52%; left: 10%; width: 35%; text-align: center; }
-#dobEng { top: 59%; left: 18%; }
-#residenceEng { top: 59%; left: 32%; }
-#gradeEng { top: 72%; left: 16%; }
-#examDateEng { top: 72%; left: 30%; }
+/* Top section (G.R. aur Serial ko thoda upar kiya) */
+#grNo { top: 18%; left: 26%; font-size: 18px; font-weight: bold; }
+#serialNo { top: 18%; right: 26%; font-size: 18px; font-weight: bold; }
 
-/* RIGHT SIDE (URDU) */
-#madrasaUrdu { top: 45%; right: 10%; width: 35%; text-align: center; }
-#studentUrdu { top: 52%; right: 10%; width: 35%; text-align: center; }
-#dobUrdu { top: 59%; right: 30%; }
-#residenceUrdu { top: 59%; right: 15%; }
-#gradeUrdu { top: 72%; right: 32%; }
-#examDateUrdu { top: 72%; right: 14%; }
+/* LEFT SIDE (ENGLISH) - Lines ke upar set kiya */
+#madrasaEng { top: 47%; left: 22%; width: 28%; text-align: center; }
+#studentEng { top: 54.5%; left: 22%; width: 28%; text-align: center; }
+#dobEng { top: 61.5%; left: 16%; }
+#residenceEng { top: 61.5%; left: 34%; }
+#gradeEng { top: 74.5%; left: 27%; }
+#examDateEng { top: 74.5%; left: 40%; }
 
-/* Bottom Issue Date */
-#issueDateUrdu { top: 87%; right: 33%; }
+/* RIGHT SIDE (URDU) - Lines ke upar set kiya */
+#madrasaUrdu { top: 47%; right: 20%; width: 28%; text-align: center; }
+#studentUrdu { top: 54.5%; right: 20%; width: 28%; text-align: center; }
+#dobUrdu { top: 61.5%; right: 14%; }
+#residenceUrdu { top: 61.5%; right: 32%; }
+#gradeUrdu { top: 74.5%; right: 27%; }
+#examDateUrdu { top: 74.5%; right: 41%; }
+
+/* Bottom Issue Date - Beech me laya gaya */
+#issueDateUrdu { top: 85.5%; left: 55%; transform: translateX(-50%); }
