@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sanad Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- PDF aur High-Res Image ke liye Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="controls">
+        <h2>Sanad Generator (HD PDF)</h2>
+        <select id="certType">
+            <option value="Old_Nazra">Nazra Sanad</option>
+            <option value="Old_Hifz">Hifz Sanad</option>
+        </select>
+        <input type="text" id="regNo" placeholder="G.R.No (Registration No) darj karein">
+        <button onclick="fetchData()">Data Layein</button>
+        <button onclick="downloadPDF()" id="printBtn" style="display:none; background-color: #28a745; color: white;">Download PDF</button>
+        <p id="status"></p>
+    </div>
+
+    <!-- Certificate UI ko ek wrapper me rakha hai taaki choti screen par scroll ho sake -->
+    <div class="cert-wrapper" id="certWrapper" style="display:none;">
+        <div id="certificate" class="certificate">
+            <img id="certImage" src="" alt="Sanad Background">
+            
+            <div id="grNo" class="field"></div>
+            <div id="serialNo" class="field"></div>
+            <div id="madrasaName" class="field urdu-font"></div>
+            <div id="studentName" class="field urdu-font"></div>
+            <div id="dob" class="field"></div>
+            <div id="residence" class="field urdu-font"></div>
+            <div id="grade" class="field urdu-font"></div>
+            <div id="examDate" class="field"></div>
+            <div id="issueDate" class="field"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'Jameel Noori';
+    src: url('jameel-noori-nastaleeq.woff2') format('woff2'); 
+}
+
+body { font-family: Arial, sans-serif; background: #e0e0e0; margin: 0; padding-bottom: 50px; }
+.controls { text-align: center; margin: 20px auto; padding: 20px; background: white; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.controls input, .controls select, .controls button { padding: 10px; margin: 5px; font-size: 16px; cursor: pointer; }
+
+.urdu-font { 
+    font-family: 'Jameel Noori', serif; 
+    direction: rtl; 
+    font-size: 28px; 
+    font-weight: bold;
+}
+
+/* Scrollable wrapper */
+.cert-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    text-align: center;
+}
+
+/* Sanad ka Exact Fix Size */
+.certificate {
+    position: relative;
+    width: 1123px;  /* A4 Width */
+    height: 794px;  /* A4 Height */
+    margin: 0 auto;
+    background: white;
+    text-align: left;
+}
+.certificate img { width: 100%; height: 100%; object-fit: contain; }
+
+.field { position: absolute; color: #000; font-weight: bold; white-space: nowrap; }
+
+/* Percentages fixed layout ke hisaab se (Aap isko thoda adjust kar sakte hain) */
+#grNo { top: 21%; left: 22%; font-size: 18px; }
+#serialNo { top: 21%; right: 22%; font-size: 18px; }
+#madrasaName { top: 43%; left: 10%; width: 80%; text-align: center; }
+#studentName { top: 50.5%; left: 10%; width: 80%; text-align: center; }
+#dob { top: 58%; left: 18%; font-size: 16px; }
+#residence { top: 58%; right: 18%; width: 30%; text-align: right; }
+#grade { top: 72%; right: 28%; }
+#examDate { top: 72%; left: 28%; }
+#issueDate { top: 88%; left: 50%; transform: translateX(-50%); font-size: 16px; }
